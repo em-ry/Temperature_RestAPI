@@ -7,7 +7,10 @@
 <body>
 <h1> Weather Data API</h1>
 <p> URL Format: http://127.0.0.1:5000/api/v1/station/date</p>
-<p> URL Example: http://127.0.0.1:5000/api/v1/10/1988-10-25</p>
+<p> URL Examples:</p>
+<p> To get one date for one station: http://127.0.0.1:5000/api/v1/10/1988-10-25</p>
+<p> To get all dates for one station: http://127.0.0.1:5000/api/v1/10</p>
+<p> To get all dates for one station in one year: http://127.0.0.1:5000/api/v1/yearly/10/1990</p>
 <br>
 <!-- By default, flask doesn't render its html as html, the "|safe" does that for you.!-->
 <p> {{data|safe}}</p>
